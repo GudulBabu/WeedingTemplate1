@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Rouge+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.container{
+    width: fit-content;
+    margin: auto;
+}
+.alter{
+    position: relative;
+    height: 600px;
+    width: 400px;
+    background-image: radial-gradient(rgb(26, 107, 95),rgb(13,29,46));
+    overflow: hidden;
+}
+.alter img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 50%;
+    padding: 28px 20px 28px 20px;
+}
+.alter::before{
+    content: url("./image/Decoration/alter.svg");
+    padding: 12px 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    /* background-image: radial-gradient(transparent 50%,rgb(13,29,46)); */
+}
+/* .alter::after{
+    content: "Text & Text";
+    text-align: center;
+    color: rgb(247,204,137);
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient( 205deg,rgb(13,29,46), rgb(21,72,64));
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+} */
+.card{
+    position: relative;
+    height: 600px;
+    width: 400px;
+    background: linear-gradient( -45deg,rgb(13,29,46), rgb(21,72,64));
+    overflow: hidden;
+    border-top: 1px solid rgb(247,204,137);
+    border-bottom: 1px solid rgb(247,204,137);
+}
+.card::after{
+    content: url("./image/Decoration/Untitled-1.svg");
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: -10%;
+    right: -20%;
+    transform: rotate(-100deg);
+}
+.card::before{
+    content: url("./image/Decoration/Untitled-1.svg");
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: -15%;
+    left: -20%;
+    transform: rotate(90deg);
+}
+.card .inner{
+    width: 80%;
+    margin: auto;
+    padding-top: 15%;
+    text-align: center;
+    background: linear-gradient(to right,rgb(231, 155, 55), rgb(247,204,137),rgb(226, 150, 51), rgb(247,204,137));
+    -webkit-background-clip: text;
+}
+.card .inner p{
+    text-transform: uppercase;
+    color: rgb(247,204,137);
+    font-size: 12px;
+    padding: 0 20%;
+}
+.card .inner img{
+    width: 50px;
+    padding: 15% 0 0 0;
+}
+.card .inner h3{
+    font-size: 70px;
+    font-family: 'Rouge Script', cursive;
+    -webkit-text-fill-color: transparent;
+    padding: 0 0 5% 0;
+}
+.card .inner h3 span{
+    font-size: 30px;
+}
+.card .inner h2{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    position: relative;
+    color: rgb(247,204,137);
+    /* -webkit-text-fill-color: transparent; */
+}
+.card .inner h2 span{
+    font-size: 70px;
+    font-family: 'Rouge Script', cursive;
+    color: rgb(241, 185, 94);
+    /* -webkit-text-fill-color: transparent; */
+}
+.card .inner h2::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(247,204,137);
+    left: 10%;
+    bottom: 13px;
+}
+.card .inner h2::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background-color: rgb(247,204,137);
+    left: 10%;
+    top: 30px;
+}
+.card .inner .date{
+    padding: 5% 0;
+}
+.card .inner .date p{
+    font-size: 14px;
+    padding: 0 0 2px 0;
+}
+.card .inner .date p:nth-child(2){
+    font-weight: bold;
+}
+.card .inner .place{
+    padding: 5% 0;
+}
+.card .inner .place p:first-child{
+    font-size: 14px;
+    padding: 0 0 2px 0;
+}
+.card .inner .place p:nth-child(2){
+    font-size: 10px;
+}
+.card .inner .time{
+    padding: 5% 0;
+}
+.card .inner .time p{
+    font-size: 14px;
+}
+.events{
+    position: relative;
+    height: 600px;
+    width: 400px;
+    background: linear-gradient( 225deg,rgb(13,29,46), rgb(21,72,64));
+    overflow: hidden;
+    border-bottom: 1px solid rgb(247,204,137);
+    text-align: center;
+}
+.events::after{
+    content: url("./image/Decoration/events.svg");
+    width: 100%;
+    height: 100%;
+    padding: 2px 0;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.events img{
+    width: 50px;
+}
+.events h2{
+    text-align: center;
+    background: linear-gradient(to right,rgb(231, 155, 55), rgb(247,204,137),rgb(226, 150, 51), rgb(247,204,137));
+    -webkit-background-clip: text;
+    font-size: 70px;
+    font-family: 'Rouge Script', cursive;
+    -webkit-text-fill-color: transparent;
+    padding: 50px 0 5% 0;
+    position: relative;
+}
+.events div{
+    padding: 25px 0;
+}
+.events div p{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgb(247,204,137);
+    padding: 0 20%;
+}
+.events div p:first-child{
+    font-family: 'Rouge Script', cursive;
+    font-size: 50px;
+    text-transform: none;
+    position: relative;
+}
+.events p:first-child:after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 2px;
+    background-color: rgb(247,204,137);
+    left: 20%;
+    bottom: 10px;
+}
